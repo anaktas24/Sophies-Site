@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
+import Logo from './Logo'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="brand" >S</Link>
+      <Link to="/" className="brand" ><Logo/></Link>
       <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div className="hamburger"></div>
       </div>
