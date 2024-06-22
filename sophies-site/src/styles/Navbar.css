@@ -12,6 +12,10 @@
 .brand {
   color: #000000;
   font-size: 1.5em;
+  background-color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+
 }
 
 .menu-toggle {
@@ -64,7 +68,7 @@
 
 .nav-links a:hover {
   background-color: #ffffff;
-  color: #282c34;
+  color: #004de6;
 }
 
 @media (max-width: 768px) {
@@ -76,10 +80,11 @@
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #282c34;
+    background-color: #4a80be;
     position: absolute;
     top: 60px;
     left: 0;
+    opacity: 0.9;
   }
 
   .nav-links.open {
