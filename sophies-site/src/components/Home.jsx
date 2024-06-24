@@ -10,6 +10,8 @@ function Home() {
         <img src={snakebg} alt="Background" className="background-image" />
         <div className="text-overlay">
           <h1>BIG LETTERS</h1>
+          <p>Small letters</p>
+
         </div>
       </div>
     </div>
