@@ -11,6 +11,9 @@ function Home() {
         <div className="text-overlay">
           <h1>BIG LETTERS</h1>
           <p>Small letters</p>
+          <p>Small letters</p>
+          <p>Small letters</p>
+          <button className="btn">Start Game</button>
 
         </div>
       </div>
