@@ -1,0 +1,15 @@
+/* Logo.css */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.logo {
+  font-family: 'Nunito', sans-serif; /* Applies the Nunito font to your logo */
+  font-size: 2em; /* Adjust size as needed */
+  color: #000000; /* Default logo color */
+  background-color: transparent;
+  border-radius: 5px; /* Rounded corners */
+}

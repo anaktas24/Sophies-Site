@@ -13,7 +13,9 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <Link to="/" className="brand" ><Logo/></Link>
+      <Link to="/" className="brand" >
+        <Logo/>
+      </Link>
       <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <div className="hamburger"></div>
       </div>

@@ -6,29 +6,33 @@
   padding: 10px 20px;
   background-color: r;
   background: transparent;
-
+  z-index: 1000;
 }
 
 .brand {
   color: #000000;
   font-size: 1.5em;
-  background-color: #ffffff;
+  background-color: transparent; /* Match the logo background color if needed */
   padding: 5px 10px;
   border-radius: 5px;
-
+  text-decoration: none; /* Removes underline */
+  outline: none; /* Removes the default focus outline */
+  -webkit-tap-highlight-color: transparent;
 }
+
 
 .menu-toggle {
   display: none;
   flex-direction: column;
   cursor: pointer;
+  position: relative;
 }
 
 .menu-toggle .hamburger,
 .menu-toggle .hamburger::before,
 .menu-toggle .hamburger::after {
   content: '';
-  width: 25px;
+  width: 27px;
   height: 3px;
   background-color: #000000;
   margin: 5px 0;
@@ -58,7 +62,7 @@
   margin: 0 15px;
 }
 
-.nav-links a {
+.nav-links a { /*The link letters*/
   text-decoration: none;
   color: #ffffff;
   font-size: 1.2em;
@@ -85,6 +89,7 @@
     top: 60px;
     left: 0;
     opacity: 0.9;
+    z-index: 1001;
   }
 
   .nav-links.open {
