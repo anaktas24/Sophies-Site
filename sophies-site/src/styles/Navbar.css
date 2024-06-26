@@ -13,7 +13,7 @@
 }
 
 .navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.9); /* Background color when scrolled */
+  background-color: transparent; /* Background color when scrolled */
   padding: 5px 20px;  /* Adjust padding when scrolled */
 }
 

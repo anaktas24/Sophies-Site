@@ -36,16 +36,13 @@ function Navbar() {
     </div>
     <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
       <li>
-        <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
       </li>
       <li>
         <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
       </li>
       <li>
         <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
-      </li>
-      <li>
-        <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
       </li>
     </ul>
   </nav>
