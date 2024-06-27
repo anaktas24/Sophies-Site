@@ -1,0 +1,27 @@
+/* LineWithDot.css */
+.line-container {
+  position: fixed;
+  top: 5em; /* Adjust distance from top */
+  left: 3.3em;
+  width: 20px; /* Adjust width as needed */
+  height: 600px; /* Adjust height as needed */
+  margin-top: 10px; /* Space between logo and line */
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 2px; /* Adjust thickness of the line */
+  background-color: black; /* Adjust color of the line */
+}
+
+.dot {
+  position: absolute;
+  left: -4px; /* Adjust to center the dot on the line */
+  width: 10px; /* Adjust size of the dot */
+  height: 10px; /* Adjust size of the dot */
+  background-color: rgb(0, 0, 0); /* Adjust color of the dot */
+  border-radius: 50%;
+  transition: top 0.5s ease;
+}

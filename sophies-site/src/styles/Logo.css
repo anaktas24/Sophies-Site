@@ -12,4 +12,10 @@
   color: #000000; /* Default logo color */
   background-color: transparent;
   border-radius: 5px; /* Rounded corners */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.logo.hidden {
+  transform: translateX(-100%); /* Moves the logo off-screen */
+  opacity: 0;
 }

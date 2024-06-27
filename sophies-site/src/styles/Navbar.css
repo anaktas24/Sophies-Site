@@ -69,7 +69,7 @@
   content: '';
   width: 27px;
   height: 3px;
-  background-color: #df0000;
+  background-color: #000000;
   margin: 5px 0;
   transition: transform 0.3s ease;
 }

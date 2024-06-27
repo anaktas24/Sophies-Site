@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 import Logo from './Logo';
 
+
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -26,7 +29,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
-    <Link to="/" className={`brand ${isScrolled ? 'scrolled' : ''}`}>
+    <Link to="/" className={`brand ${isScrolled ? 'scrolled' : 'hidden'}`}>
       {!isScrolled ? <Logo /> : <span className="text">Sonya Studio</span>}
     </Link>
     <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -34,6 +37,7 @@ function Navbar() {
       <div className="hamburger"></div>
       <div className="hamburger"></div>
     </div>
+
     <ul className={`nav-links ${menuOpen ? 'open' : ''}`}>
       <li>
         <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
