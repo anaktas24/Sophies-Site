@@ -12,7 +12,7 @@
   color: #000000; /* Default logo color */
   background-color: transparent;
   border-radius: 5px; /* Rounded corners */
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform 0.9s ease, opacity 0.5s ease;
 }
 
 .logo.hidden {
