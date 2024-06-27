@@ -1,13 +1,12 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home';
-import Line from './components/Line';
 import './App.css';
 
 
